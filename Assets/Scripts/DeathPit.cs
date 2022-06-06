@@ -8,10 +8,10 @@ public class DeathPit : MonoBehaviour
     {
         
         Destroy(other.gameObject);
-        
+
         if(other.gameObject.layer == 6) // if other game object is a red ball
         {
-            GameManager.Instance.blueBallActive = false;
+            GameManager.Instance.redBallActive = false;
         }
 
         if(other.gameObject.layer == 7) // if other game object is a blue ball
